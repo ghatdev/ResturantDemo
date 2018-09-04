@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:orientation="vertical">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/diffrent_size_product_roundImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim46"
+        android:src="@drawable/image_two" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim26"
+        android:text="이도원"
+        android:textColor="@color/price_text"
+        android:textSize="@dimen/fontsize24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_profile_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim2"
+        android:maxLines="1"
+        android:text="연락처: %s, 새내기 회원"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/fontsize12"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim30"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="4"
+        android:text="회원 정보를 변경하실려면, [Contact us] 메뉴를 통해 시스템 관리자에게 변경 메일을 보내주십시오."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/fontsize16"
+        android:textStyle="bold" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="@dimen/dim36"-->
+        <!--android:background="@color/price_text"-->
+        <!--android:text="Follow"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold" />-->
+
+
+
+</LinearLayout>

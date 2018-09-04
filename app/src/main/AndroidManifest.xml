@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurantdemo">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <permission android:name="com.example.restaurantdemo.READ_PERMISSION"/>
+
+    <application
+        android:name=".common.ApplicationShare"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+         <meta-data android:value="http://myrest-android.herokuapp.com" android:name="server_url"></meta-data>
+        <!--<meta-data-->
+            <!--android:name="server_url"-->
+            <!--android:value="http://192.168.0.2:8080" />-->
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubCategoryMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FullDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myrest-android.herokuapp.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ForgotPasswordActivity" />
+
+        <service
+            android:name=".service.GpsTracker"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".common.SMSReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".cp.CardContentProvider"
+            android:authorities="com.example.restaurantdemo"
+            android:permission="com.example.restaurantdemo.READ_PERMISSION"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+    </application>
+
+</manifest>

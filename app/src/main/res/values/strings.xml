@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RestaurantDemo</string>
+    <!--<string name="server_url">http://192.168.0.2:8080</string>-->
+    <string name="server_url">http://myrest-android.herokuapp.com</string>
+
+
+    <string name="drawe_open">열기</string>
+    <string name="drawer_close">닫기</string>
+    <string name="won">\u20A9</string>
+    <string name="action_back_message">Press again to exit</string>
+
+    <!-- Menu -->
+    <string name="menu_title_1">햄버거</string>
+    <string name="menu_title_2">한식</string>
+    <string name="menu_title_3">중식</string>
+    <string name="menu_title_4">일식</string>
+    <string name="menu_title_5">커피</string>
+    <string name="menu_title_6">디저트</string>
+
+    <!--contact us tag-->
+    <string name="contact_no">1234567890</string>
+    <string name="timing">오전 10:00 ~ 오후 10:00</string>
+    <string name="email_id">edowon0623@gmail.com</string>
+    <string name="web_site">http://joneconsulting.co.kr/</string>
+
+    <string-array name="drawer_list">
+        <item>HOME</item>
+        <item>예약 서비스</item>
+        <item>제품</item>
+        <item>고객</item>
+        <item>METHODOLOGY</item>
+        <item>PRICING PLANS</item>
+        <item>ABOUT US</item>
+        <item>OUR APPROACH</item>
+        <item>MANPOWER</item>
+        <item>RECRUITMENT PROCESS</item>
+        <item>CONTACT US</item>
+    </string-array>
+</resources>

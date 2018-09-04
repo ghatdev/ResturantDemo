@@ -1,0 +1,67 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Application Font size-->
+    <dimen name="fontsize10">14sp</dimen>
+    <dimen name="fontsize12">16sp</dimen>
+    <dimen name="fontsize14">18sp</dimen>
+    <dimen name="fontsize16">20sp</dimen>
+    <dimen name="fontsize18">22sp</dimen>
+    <dimen name="fontsize20">24sp</dimen>
+    <dimen name="fontsize22">26sp</dimen>
+    <dimen name="fontsize24">28sp</dimen>
+    <dimen name="fontsize26">30sp</dimen>
+    <dimen name="fontsize28">32sp</dimen>
+    <dimen name="fontsize30">34sp</dimen>
+    <dimen name="fontsize32">36sp</dimen>
+    <dimen name="fontsize34">38sp</dimen>
+    <dimen name="fontsize36">40sp</dimen>
+    <dimen name="fontsize38">42sp</dimen>
+    <dimen name="fontsize40">44sp</dimen>
+    <dimen name="fontsize42">46sp</dimen>
+    <dimen name="fontsize44">48sp</dimen>
+    <dimen name="fontsize46">50sp</dimen>
+    <dimen name="fontsize48">52sp</dimen>
+    <dimen name="fontsize50">54sp</dimen>
+
+    <!--Application dimen size-->
+
+    <dimen name="dim2">6dip</dimen>
+    <dimen name="dim4">8dip</dimen>
+    <dimen name="dim5">5dip</dimen>
+    <dimen name="dim6">10dip</dimen>
+    <dimen name="dim8">12dip</dimen>
+    <dimen name="dim10">14dip</dimen>
+    <dimen name="dim12">16dip</dimen>
+    <dimen name="dim14">18dip</dimen>
+    <dimen name="dim16">20dip</dimen>
+    <dimen name="dim18">22dip</dimen>
+    <dimen name="dim20">24dip</dimen>
+    <dimen name="dim22">26dip</dimen>
+    <dimen name="dim24">28dip</dimen>
+    <dimen name="dim26">30dip</dimen>
+    <dimen name="dim28">32dip</dimen>
+    <dimen name="dim30">34dip</dimen>
+    <dimen name="dim32">36dip</dimen>
+    <dimen name="dim34">38dip</dimen>
+    <dimen name="dim36">40dip</dimen>
+    <dimen name="dim38">42dip</dimen>
+    <dimen name="dim40">44dip</dimen>
+    <dimen name="dim42">46dip</dimen>
+    <dimen name="dim44">48dip</dimen>
+    <dimen name="dim46">50dip</dimen>
+    <dimen name="dim48">52dip</dimen>
+    <dimen name="dim50">54dip</dimen>
+    <dimen name="dim70">74dip</dimen>
+
+    <dimen name="dim80">84dip</dimen>
+    <dimen name="dim200">210dip</dimen>
+    <dimen name="dim250">270dip</dimen>
+
+    <dimen name="dim60">64dip</dimen>
+    <dimen name="dim120">124dip</dimen>
+    <dimen name="dim140">144dip</dimen>
+</resources>

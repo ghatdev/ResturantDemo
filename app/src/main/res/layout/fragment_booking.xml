@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/booking_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim16"
+        android:text="레스트랑 전화 예약"
+        android:textColor="@color/price_text"
+        android:textSize="@dimen/fontsize26"
+        android:textStyle="bold|italic" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim6"
+        android:layout_marginRight="@dimen/dim6">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="식당명 :"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvResturantName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="4"
+                android:text="  무릉도원"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="top|right"
+                android:text="주소 :"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvAddress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="4"
+                android:text="  서울 송파구 잠실동 롯데월드몰 1F"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="전화번호 :"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvNumber"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:gravity="left"
+                android:text="  +82 2 444-0000"
+                android:textColorLink="@color/link_color"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="영업시간 :"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvTiming"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/timing"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="Email :"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvEmail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/email_id"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim10"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="Website:"
+                android:textColor="@color/price_text"
+                android:textSize="@dimen/fontsize18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/booking_tvWebsite"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/web_site"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fontsize16"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/booking_btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim20"
+        android:background="@color/price_text"
+        android:text="Book Table"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/booking_btnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim20"
+        android:background="@color/price_text"
+        android:text="Show Location"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

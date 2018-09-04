@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dim6">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim6"
+                android:weightSum="5">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/cart_ivImage"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_two" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dim16"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cart_itemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_weight="1"
+                        android:text="Coffee" />
+
+                    <TextView
+                        android:id="@+id/cart_itemDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim12"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="SimpleText allows editing including text formatting"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:id="@+id/cart_itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_weight="1"
+                        android:text="\u20B9.250.00"
+                        android:textColor="@color/price_text" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cart_itemQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/dim8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim4">
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/cart_btnInfo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="@dimen/dim8"-->
+                    <!--android:layout_marginRight="@dimen/dim44"-->
+                    <!--android:layout_marginTop="@dimen/dim8"-->
+                    <!--android:background="@drawable/round_btn"-->
+                    <!--android:src="@drawable/info" />-->
+
+                <ImageButton
+                    android:id="@+id/cart_btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim8"
+                    android:layout_marginRight="@dimen/dim44"
+                    android:layout_marginTop="@dimen/dim8"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/cancel" />
+
+                <ImageButton
+                    android:id="@+id/cart_btnMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim8"
+                    android:layout_marginRight="@dimen/dim44"
+                    android:layout_marginTop="@dimen/dim8"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/minus" />
+
+                <ImageButton
+                    android:id="@+id/cart_btnPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim8"
+                    android:layout_marginRight="@dimen/dim44"
+                    android:layout_marginTop="@dimen/dim8"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/add" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

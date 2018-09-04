@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/menu_offer"-->
+        <!--android:title="추천 메뉴" />-->
+    <item
+        android:id="@+id/menu_order"
+        android:title="주문 내역" />
+    <!--<item-->
+        <!--android:id="@+id/menu_setting"-->
+        <!--android:title="설정" />-->
+    <item
+        android:id="@+id/menu_logout"
+        android:title="로그아웃" />
+</menu>

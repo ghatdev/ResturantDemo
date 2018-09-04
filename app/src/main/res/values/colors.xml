@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#000000</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="toolbar_title">#ffffff</color>
+    <color name="toolbar_itemDetail">#DBC8A8</color>
+    <color name="background_coffee_dark">#C7B69A</color>
+    <color name="price_text">#0E9F68</color>
+    <color name="link_color">#2241c5</color>
+    <color name="text_gray">#696969</color>
+    <color name="light_gray">#50D3D3D3</color>
+
+
+    <color name="navigation_background">#2B2F3A</color>
+
+
+    <color name="black_alpha_40">#66000000</color>
+    rgb(196,179,151)
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cart_checkout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cart_itemCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim6"
+            android:background="#70ffffff"
+            android:gravity="center"
+            android:padding="@dimen/dim6"
+            android:text="0 상품/전체 금액 \u20A90"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/fontsize14"
+            android:textStyle="bold" />
+
+        <!-- <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:scrollbars="none">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cart_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim6"
+            android:layout_marginTop="@dimen/dim6"
+            android:clipToPadding="false" />
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cart_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dim8"
+        android:background="@color/price_text"
+        android:gravity="center"
+        android:padding="@dimen/dim12"
+        android:textSize="@dimen/fontsize16"
+        android:text="위 내용으로 결제하기"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</RelativeLayout>

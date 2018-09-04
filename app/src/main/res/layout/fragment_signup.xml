@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dim22"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/checkout_shippingaddress_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:gravity="center"
+                android:padding="@dimen/dim12"
+                android:text="회원등록"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim8"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/signup_tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim14"
+                    android:paddingTop="@dimen/dim4"
+                    android:text="성명"
+                    android:textSize="@dimen/fontsize11"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:id="@+id/signup_edname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:padding="@dimen/dim6"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/fontsize16"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim8"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/signup_tvemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim14"
+                    android:paddingTop="@dimen/dim4"
+                    android:text="Email"
+                    android:textSize="@dimen/fontsize11"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:id="@+id/signup_edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dim6"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/fontsize16"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim8"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/signup_tvcontact_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim14"
+                    android:paddingTop="@dimen/dim4"
+                    android:text="연락처"
+                    android:textSize="@dimen/fontsize11"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:id="@+id/signup_edcontact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:padding="@dimen/dim6"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/fontsize16"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim8"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/login_tvpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim14"
+                    android:paddingTop="@dimen/dim4"
+                    android:text="비밀번호 (영문 대소문자, 숫자만 가능)"
+                    android:textSize="@dimen/fontsize11"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:id="@+id/signup_edpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/dim6"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/fontsize16"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim8"
+                android:layout_marginTop="@dimen/dim8"
+                android:background="@drawable/ed_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/signup_tvCPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim14"
+                    android:paddingTop="@dimen/dim4"
+                    android:text="비밀번호 확인"
+                    android:textSize="@dimen/fontsize11"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:id="@+id/signup_edCPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/dim6"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/fontsize16"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/join_btnJoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginLeft="@dimen/dim6"
+                android:layout_marginRight="@dimen/dim6"
+                android:layout_marginTop="@dimen/dim16"
+                android:background="@color/price_text"
+                android:text="회원등록"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

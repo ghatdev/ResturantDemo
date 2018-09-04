@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_full_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dim10"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/sub_menu_img"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/coffee_one" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim4"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim4">
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kick Frappe"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fontsize14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="\u20A9 8.00"
+                    android:textColor="@color/price_text"
+                    android:textSize="@dimen/fontsize14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim4"
+                android:text="set the background of the root layout as newly created drawable xml resource i.e., bg.xml. This will only change the opacity of the background image of the layout without effecting opacity of the child elements of the layout"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dim4"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim4">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/full_detail_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_placeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim10"
+                android:background="@color/price_text"
+                android:text="Place The Order"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_addToFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim2"
+                android:background="@drawable/ed_border"
+                android:text="Add To favorites"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/full_detail_fragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_order_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim8"
+        android:background="@drawable/ed_border"
+        android:gravity="center"
+        android:padding="@dimen/dim12"
+        android:text="전체 주문 내역"
+        android:textAllCaps="true"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim10"
+        android:clipToPadding="false" />
+
+</LinearLayout>

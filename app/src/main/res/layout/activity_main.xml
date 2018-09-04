@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    style="@style/DrawerArrowToggleStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.restaurantdemo.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/fragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#70000000"
+        android:paddingTop="?attr/actionBarSize"
+        android:textAlignment="center"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_navigation">
+
+
+        <include layout="@layout/nav_bottom" />
+
+    </android.support.design.widget.NavigationView>-->
+
+    <include layout="@layout/navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

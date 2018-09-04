@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dim22"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/checkout_shippingaddress_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim8"
+        android:background="@drawable/ed_border"
+        android:gravity="center"
+        android:padding="@dimen/dim12"
+        android:text="로그인"
+        android:textAllCaps="true"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim8"
+        android:layout_marginRight="@dimen/dim8"
+        android:layout_marginTop="@dimen/dim8"
+        android:background="@drawable/ed_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim14"
+            android:paddingTop="@dimen/dim4"
+            android:text="Email"
+            android:textSize="@dimen/fontsize11"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/login_edemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim8"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/dim6"
+            android:text=""
+            android:textAllCaps="true"
+            android:textSize="@dimen/fontsize16"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim8"
+        android:layout_marginRight="@dimen/dim8"
+        android:layout_marginTop="@dimen/dim8"
+        android:background="@drawable/ed_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_tvpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim14"
+            android:paddingTop="@dimen/dim4"
+            android:text="Password"
+            android:textSize="@dimen/fontsize11"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/login_edpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim8"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:padding="@dimen/dim6"
+            android:text=""
+            android:textAllCaps="true"
+            android:textSize="@dimen/fontsize16"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim8"
+        android:layout_marginRight="@dimen/dim8"
+        android:layout_marginTop="@dimen/dim8"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/cb_autosave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dim4"
+            android:textSize="@dimen/fontsize11"
+            android:typeface="monospace"
+            android:text="로그인 정보 저장" />
+
+        <TextView
+            android:id="@+id/login_tvforgot_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim14"
+            android:layout_marginRight="@dimen/dim14"
+            android:gravity="end"
+            android:padding="@dimen/dim6"
+            android:paddingTop="@dimen/dim4"
+            android:text="비밀번호를 분실 하셨나요?"
+            android:textColor="@color/price_text"
+            android:textSize="@dimen/fontsize11"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim10"
+        android:layout_marginLeft="@dimen/dim6"
+        android:layout_marginRight="@dimen/dim6"
+        android:layout_marginTop="@dimen/dim16"
+        android:background="@color/price_text"
+        android:text="로그인"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>
